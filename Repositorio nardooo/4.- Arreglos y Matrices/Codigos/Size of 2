@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main()
+
+{
+    char nombre1[20];
+    char nombre2[20];
+        printf("escriba nombre de alumno 1\n");
+
+        fgets(nombre1, sizeof(nombre1), stdin);
+        printf("escriba nombre de alumno 2\n");
+        fgets(nombre2, sizeof(nombre2), stdin);
+            printf("%s", nombre1);
+            printf("%s", nombre2);
+
+
+
+
+
+
+    return 0;
+}

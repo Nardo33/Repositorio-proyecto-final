@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+
+int i=0;
+char nombre_completo[4][15];
+
+
+    printf("Hola, escribe tu nombre\n");
+
+
+        fgets(nombre_completo[0],sizeof(nombre_completo[0]),stdin);
+
+
+    printf("escribe tu segundo nombre\n");
+
+
+
+        fgets(nombre_completo[1],sizeof(nombre_completo[1]),stdin);
+
+
+
+
+    printf("escribe tu primer apellido\n");
+
+
+        fgets(nombre_completo[2],sizeof(nombre_completo[2]),stdin);
+
+
+
+    printf("escribe tu segundo apellido \n");
+
+
+        fgets(nombre_completo[3],sizeof(nombre_completo[3]),stdin);
+
+                    for (i=0;i<=3;i++)
+                    {
+                nombre_completo[i][strcspn(nombre_completo[i],"\n")];
+                        printf("%s",nombre_completo[i]);
+                    }
+
+printf("\n\n///// direcciones de memoria\\\\\\\n\n");
+                    for (i=0;i<=6;i++)
+                    {
+                        printf("\n%d",&nombre_completo[i]);
+                    }
+
+
+
+    return 0;
+}

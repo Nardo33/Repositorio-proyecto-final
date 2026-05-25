@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+//funciones por referencia
+int f_doble(int a){
+return a*2;}
+
+void f_triple(int *a){
+  *a = (*a)*3;
+}
+
+
+
+
+int main()
+{
+
+    int a;
+    printf("dame un No. del 1 al 100");
+    scanf("%d\n\n",&a);
+    printf("%d\n\n\n",f_doble(a));
+    f_triple(&a);
+    printf("\n%d",a);
+
+    return 0;
+
+}
